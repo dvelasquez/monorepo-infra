@@ -1,12 +1,12 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "tasks": {
-    "build": {
-      "outputs": ["dist/**"]
-    },    
+  "tasks": {      
     "dev": {
       "persistent": true,
       "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
     }
   }
 }

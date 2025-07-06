@@ -1,0 +1,14 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "inputs": ["package.json", "tsconfig.json", "vite.config.ts", "index.html", "tsconfig.app.json", "tsconfig.json",  "src/**/*", "public/**/*"],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    }
+  }
+}

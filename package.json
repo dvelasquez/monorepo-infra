@@ -15,22 +15,24 @@
     "nodejs",
     "typescript"
   ],
-  "author": "",
+  "author": "Danilo Velasquez",
   "license": "MIT",
   "description": "A monorepo imlementation starter with examples featurin npm libraries, shared configs, caching, release workflows, and more.",
   "devDependencies": {
     "@lerna-lite/cli": "4.5.1",
     "@lerna-lite/exec": "4.5.1",
     "@lerna-lite/publish": "4.5.1",
-    "@lerna-lite/version": "4.5.1"
+    "@lerna-lite/version": "4.5.1",
+    "turbo": "2.5.4"
   },
   "workspaces": [
-    "applications/*",
     "configurations/*",
+    "applications/*",
     "libraries/*"
   ],
   "volta": {
     "node": "22.17.0",
     "npm": "11.4.2"
-  }
+  },
+  "packageManager": "npm@11.4.2"
 }

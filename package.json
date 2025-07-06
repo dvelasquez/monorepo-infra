@@ -2,8 +2,10 @@
   "name": "@monorepo-infra/root",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "preinstall": "node scripts/install-package-manager.js",
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
